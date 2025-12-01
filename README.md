@@ -33,16 +33,14 @@ END
 
 ### Flowchart
 
-mermaid  
+```mermaid
 
 flowchart TD
+    A([START]) --> B[Set str = Java]
 
-```
-    A([START]) --> B[Set str = "Java"]
+    B --> C[Calculate length of str]
 
-    B --> C[Set length = LENGTH(str)]
-
-    C --> D[PRINT "Length of the string is: " + length]
+    C --> D[Display length of the string]
 
     D --> E([END])
 ```
@@ -62,34 +60,19 @@ What char is at index position 6 in the following String:
 - Output that character
 
 - End
-
-### Pseudocode
-
-```pgsql
-START
-
-SET text = "Long example sentence"
-
-SET character = text[6]
-
-PRINT "Character at index 6 is: ", character
-
-END
 ```
 
-### Flowchart 
+```
+### Flowchart
 
-mermaid
+```mermaid
 
 flowchart TD
+    A([START]) --> B[Set text = Long example sentence]
 
-```
+    B --> C[Get character at index 6 of text]
 
-    A([START]) --> B["text = 'Long example sentence'"]
+    C --> D[Character at index 6 is e]
 
-    B --> C["character = text[6]"]
-
-    C --> D["PRINT character"]
-
-    D --> E([END])
+  D --> E([END])
 ```
