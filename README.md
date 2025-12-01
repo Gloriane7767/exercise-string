@@ -23,13 +23,17 @@ END
 
 ### Flowchart
 
-```
-
 flowchart TD
 
-    A([START]) --> B[text = "Java"]
+   
+    A([START]) --> B[text = "Java"\ncount = 0\nindex = 0]
 
-    B --> C[PRINT]
+    B --> C{Is index < length of text?}
 
-    C --> D([END])
-```
+    C -->|Yes| D[count = count + 1\nindex = index + 1]
+    D --> C
+
+    C -->|No| E[PRINT count]
+
+    E --> F([END])
+
