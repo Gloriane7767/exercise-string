@@ -36,6 +36,7 @@ END
 flowchart TD
 
 ```
+mermaid
     A([START]) --> B[Set str = "Java"]
 
     B --> C[Set length = LENGTH(str)]
@@ -80,6 +81,7 @@ END
 flowchart TD
 
 ```
+mermaid
     A([START]) --> B["text = 'Long example sentence'"]
 
     B --> C["character = text[6]"]
