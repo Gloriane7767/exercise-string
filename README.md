@@ -22,7 +22,9 @@ END
 ```
 
 ### Flowchart
-```text
+
+```
+
 flowchart TD
 
     A([START]) --> B[text = "Java"]
