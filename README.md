@@ -204,10 +204,8 @@ flowchart TD
 ### Exercise 6: Replace "worst" with "best"
 
 ### Question.
-Correct the following String: "Java is the worst
-programming language!" by replacing the (obviously
-incorrect) word "worst" with the word "best". Then print
-out the sentence.
+What is the output of the following String:
+"\tJ\ta\tv\ta\t" after you trim it?
 
 ### Algorithm:
 
@@ -237,6 +235,247 @@ END
 flowchart TD
     A[Start] --> B[str = Java is the worst programming language!]
     B --> C[str = REPLACE str,worst,best]
+    C --> D[PRINT str]
+    D --> E[End]
+```
+
+### Exercise 7: Trim "\tJ\ta\tv\ta\t"
+
+### Question.
+Convert the following String: "CAPS EQUALS SCREAMING" to
+lowercase and print it out. Then convert it back to
+uppercase and print it out again.
+
+### Algorithm:
+
+- Start
+
+- Initialize string: str = "\tJ\ta\tv\ta\t"
+
+- Trim leading and trailing whitespace (including tabs)
+
+- Print the trimmed string
+
+- End
+
+### Pseudocode:
+
+```pgsql
+START
+  str <- "\tJ\ta\tv\ta\t"
+  trimmed <- TRIM(str)
+  PRINT trimmed
+END
+```
+
+### Flowchart:
+
+```mermaid
+flowchart TD
+    A[Start] --> B[str = \tJ\ta\tv\ta\t]
+    B --> C[trimmed = TRIM str]
+    C --> D[PRINT trimmed]
+    D --> E[End]
+```
+
+### Exercise 8: Convert int 20 to String and append 20
+
+### Question.
+Parse the following int: 20 to a String and add a 20 to the
+end of the String. Printing it out should return: "2020".
+
+### Algorithm:
+
+- Start
+
+- Initialize int: num = 20
+
+- Convert num to string
+
+- Append "20" to the string
+
+- Print the result ("2020")
+
+- End
+
+### Pseudocode:
+
+```ps´gsql
+START
+  num <- 20
+  str <- TO_STRING(num)
+  str <- str + "20"
+  PRINT str
+END
+```
+
+### Flowchart:
+
+```mermaid
+flowchart TD
+    A[Start] --> B[num = 20]
+    B --> C[str = TO_STRING num]
+    C --> D[str = str + 20]
+    D --> E[PRINT str]
+    E --> F[End]
+```
+
+### Exercise 9: Split "Oil and Water" into array
+
+### Question.
+Oil and water don't go well together. Given the String:
+"Oil and Water", split them up into the words "Oil","Water"
+and store them in a String array.
+
+### Algorithm:
+
+- Start
+
+- Initialize string: str = "Oil and Water"
+
+- Split str into words by space
+
+- Store in array arr
+
+- Print array elements
+
+- End
+
+### Pseudocode:
+
+```pgsql
+START
+  str <- "Oil and Water"
+  arr <- SPLIT(str, " ")
+  PRINT arr
+END
+```
+
+### Flowchart:
+
+```mermaid
+flowchart TD
+    A[Start] --> B[str = Oil and Water]
+    B --> C[arr = SPLIT str,  ]
+    C --> D[PRINT arr]
+    D --> E[End]
+```
+
+### Exercise 10: Split "Carl,Susie,Fredrick,Bob,Erik"
+
+### Question.
+Split the following String: "Carl,Susie,Fredrick,Bob,Erik"
+into an array. Print out all names separately.
+
+### Algorithm:
+
+- Start
+
+- Initialize string: str = "Carl,Susie,Fredrick,Bob,Erik"
+
+- Split by comma into array names
+
+- Print each name separately
+
+- End
+
+### Pseudocode:
+
+```pgsql
+START
+  str <- "Carl,Susie,Fredrick,Bob,Erik"
+  names <- SPLIT(str, ",")
+  FOR each name in names
+      PRINT name
+END
+```
+
+### Flowchart:
+
+```mermaid
+flowchart TD
+    A[Start] --> B[str = Carl,Susie,Fredrick,Bob,Erik]
+    B --> C[names = SPLIT str, ,]
+    C --> D[FOR each name in names]
+    D --> E[PRINT name]
+    E --> F[End]
+```
+
+### Exercise 11: Convert "ThisShouldBeConverted" to char array
+
+### Question.
+Convert the following String: "ThisShouldBeConverted" to
+a char array. Iterate through the char array and print out
+each element.
+
+### Algorithm:
+
+- Start
+
+- Initialize string: str = "ThisShouldBeConverted"
+
+- Convert str to char array chars
+
+- Iterate through chars and print each element
+
+- End
+
+### Pseudocode:
+
+```pgsql
+START
+  str <- "ThisShouldBeConverted"
+  chars <- TO_CHAR_ARRAY(str)
+  FOR each c in chars
+      PRINT c
+END
+```
+
+### Flowchart:
+
+```mermaid
+flowchart TD
+    A[Start] --> B[str = ThisShouldBeConverted]
+    B --> C[chars = TO_CHAR_ARRAY str]
+    C --> D[FOR each c in chars]
+    D --> E[PRINT c]
+    E --> F[End]
+```
+
+### Exercise 12: Convert char[] {'J','a','v','a'} to String
+
+### Question.
+ Convert the following char[]: {'J','a','v','a'} to a
+String and print it out.
+
+### Algorithm:
+
+- Start
+
+- Initialize char array: arr = {'J','a','v','a'}
+
+- Convert arr to string str
+
+- Print str
+
+- End
+
+### Pseudocode:
+
+```
+START
+  arr <- {'J','a','v','a'}
+  str <- TO_STRING(arr)
+  PRINT str
+END
+```
+
+### Flowchart:
+
+```mermaid
+flowchart TD
+    A[Start] --> B[arr = J,a,v,a]
+    B --> C[str = TO_STRING arr]
     C --> D[PRINT str]
     D --> E[End]
 ```
